@@ -59,15 +59,17 @@
 		</div>
     </section>
 
-    <footer id="contact">
-        <form>
-            <input type="text" placeholder="Name & Surname" required>
-            <input type="tel" placeholder="Phone Number">
-            <textarea placeholder="Message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <div class="footer-text">Made with Love By Mbongeni Ngcobo ❤️</div>
-    </footer>
+<footer id="contact">
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <input type="text" name="name" placeholder="Name & Surname" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+        <button type="submit">Send</button>
+    </form>
+    <div class="footer-text">Made with Love By Mbongeni Ngcobo ❤️</div>
+</footer>
+	
 </body>
 </html>
 </html>
