@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #f0f0f0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.linkedin-icon {
+    font-size: 1.2rem;
+    color: #0a66c2;
+}
+
+section {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+    background: #f0f0f0;
+}
+
+form {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 0.8rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.footer-text {
+    align-self: end;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        order: 2;
+    }
+    
+    footer {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-text {
+        margin-top: 2rem;
+    }
+}
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    border: 1px solid #e1e1e1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.tech-stack span {
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.github-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
